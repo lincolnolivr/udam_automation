@@ -305,7 +305,7 @@ if __name__ == "__main__":
     print("Iniciando Script")
     print(listar_janelas())
     ativar_janela('ONEWAY   :. 23.258 .:  OW Infinity (udam)')
-    tab(7, True)
+    tab(6, True)
 
     # Configuração das datas
     data_inicio = datetime(2026, 1, 13)
