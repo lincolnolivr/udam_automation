@@ -329,7 +329,7 @@ if __name__ == "__main__":
         tab(2)
 
         # Enter 5 vezes
-        for _ in range(5):
+        for _ in range(6):
             pressionar('enter')
 
         # Próxima data
