@@ -305,7 +305,6 @@ if __name__ == "__main__":
     print("Iniciando Script")
     print(listar_janelas())
     ativar_janela('ONEWAY   :. 23.258 .:  OW Infinity (udam)')
-    tab(6, True)
 
     # Configuração das datas
     data_inicio = datetime(2026, 1, 13)
@@ -313,6 +312,7 @@ if __name__ == "__main__":
     data_atual = data_inicio
 
     while data_atual <= data_fim:
+        tab(6, True)
         data_formatada = data_atual.strftime("%d%m%Y")
         print(f"Processando data: {data_formatada}")
 
@@ -334,6 +334,7 @@ if __name__ == "__main__":
         # Próxima data
         data_atual += timedelta(days=1)
         esperar(0.5)
+
 
     print("Processo finalizado!")
     print("Dica: Mova o mouse para o canto superior esquerdo para abortar (FAILSAFE)")
