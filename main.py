@@ -318,18 +318,17 @@ if __name__ == "__main__":
 
         # Digita a data
         digitar(data_formatada)
+        esperar(1)
 
         # Shift+Tab
         tab(2, shift=True)
+        esperar(1)
 
         # Digita a data novamente
         digitar(data_formatada)
 
-        # Tab para frente
-        tab(2)
-
         # Enter 5 vezes
-        for _ in range(6):
+        for _ in range(8):
             pressionar('enter')
 
         # Próxima data
