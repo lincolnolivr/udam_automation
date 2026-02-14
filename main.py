@@ -327,6 +327,8 @@ if __name__ == "__main__":
         # Digita a data novamente
         digitar(data_formatada)
 
+        esperar(5)
+
         # Enter 5 vezes
         for _ in range(6):
             pressionar('enter')
