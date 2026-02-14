@@ -160,6 +160,12 @@ def atalho(*teclas: str):
     """
     pyautogui.hotkey(*teclas)
 
+def tab(times, shift=False):
+    for t in range(times):
+        if shift:
+            atalho('shift', 'tab')
+        else:
+            pressionar('tab')
 # ============================================
 # FUNÇÕES DE CLIPBOARD
 # ============================================
@@ -298,5 +304,6 @@ if __name__ == "__main__":
     print("Iniciando Script")
     print(listar_janelas())
     ativar_janela('ONEWAY   :. 23.258 .:  OW Infinity (udam)')
+    tab(7, True)
     print("Dica: Mova o mouse para o canto superior esquerdo para abortar (FAILSAFE)")
     os.system('pause')
