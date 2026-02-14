@@ -321,7 +321,7 @@ if __name__ == "__main__":
         esperar(1)
 
         # Shift+Tab
-        tab(3, shift=True)
+        tab(2, shift=True)
         esperar(1)
 
         # Digita a data novamente
