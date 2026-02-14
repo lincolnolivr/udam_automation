@@ -318,11 +318,10 @@ if __name__ == "__main__":
 
         # Digita a data
         digitar(data_formatada)
-        esperar(1)
+        esperar(6)
 
         # Shift+Tab
         tab(2, shift=True)
-        esperar(5)
 
         # Digita a data novamente
         digitar(data_formatada)
