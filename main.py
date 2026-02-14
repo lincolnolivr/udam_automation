@@ -328,7 +328,7 @@ if __name__ == "__main__":
         digitar(data_formatada)
 
         # Enter 5 vezes
-        for _ in range(8):
+        for _ in range(6):
             pressionar('enter')
 
         # Próxima data
