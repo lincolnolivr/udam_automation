@@ -296,6 +296,7 @@ if __name__ == "__main__":
     print("UTIL: esperar")
     print()
     print("Iniciando Script")
-    listar_janelas()
+    print(listar_janelas())
+    ativar_janela('ONEWAY   :. 23.258 .:  OW Infinity (udam)')
     print("Dica: Mova o mouse para o canto superior esquerdo para abortar (FAILSAFE)")
     os.system('pause')
