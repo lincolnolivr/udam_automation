@@ -320,13 +320,13 @@ if __name__ == "__main__":
         digitar(data_formatada)
 
         # Shift+Tab
-        tab(1, shift=True)
+        tab(2, shift=True)
 
         # Digita a data novamente
         digitar(data_formatada)
 
         # Tab para frente
-        tab(1)
+        tab(2)
 
         # Enter 5 vezes
         for _ in range(5):
