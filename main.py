@@ -160,8 +160,8 @@ def atalho(*teclas: str):
     """
     pyautogui.hotkey(*teclas)
 
-def tab(times, shift=True):
-    for t in times:
+def tab(times, shift=False):
+    for t in range(times):
         if shift:
             atalho('alt', 'tab')
         else:
@@ -304,6 +304,6 @@ if __name__ == "__main__":
     print("Iniciando Script")
     print(listar_janelas())
     ativar_janela('ONEWAY   :. 23.258 .:  OW Infinity (udam)')
-    tab(6, False)
+    tab(6, True)
     print("Dica: Mova o mouse para o canto superior esquerdo para abortar (FAILSAFE)")
     os.system('pause')
