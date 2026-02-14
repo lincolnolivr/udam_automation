@@ -322,7 +322,7 @@ if __name__ == "__main__":
 
         # Shift+Tab
         tab(2, shift=True)
-        esperar(1)
+        esperar(5)
 
         # Digita a data novamente
         digitar(data_formatada)
