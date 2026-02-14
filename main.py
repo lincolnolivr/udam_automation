@@ -3,6 +3,7 @@ import time
 import pyautogui
 import pyperclip
 import pygetwindow as gw
+from datetime import datetime, timedelta
 
 
 
@@ -305,5 +306,36 @@ if __name__ == "__main__":
     print(listar_janelas())
     ativar_janela('ONEWAY   :. 23.258 .:  OW Infinity (udam)')
     tab(7, True)
+
+    # Configuração das datas
+    data_inicio = datetime(2026, 1, 13)
+    data_fim = datetime(2026, 2, 12)
+    data_atual = data_inicio
+
+    while data_atual <= data_fim:
+        data_formatada = data_atual.strftime("%d/%m/%Y")
+        print(f"Processando data: {data_formatada}")
+
+        # Digita a data
+        digitar(data_formatada)
+
+        # Shift+Tab
+        tab(1, shift=True)
+
+        # Digita a data novamente
+        digitar(data_formatada)
+
+        # Tab para frente
+        tab(1)
+
+        # Enter 5 vezes
+        for _ in range(5):
+            pressionar('enter')
+
+        # Próxima data
+        data_atual += timedelta(days=1)
+        esperar(0.5)
+
+    print("Processo finalizado!")
     print("Dica: Mova o mouse para o canto superior esquerdo para abortar (FAILSAFE)")
     os.system('pause')
