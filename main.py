@@ -313,7 +313,7 @@ if __name__ == "__main__":
     data_atual = data_inicio
 
     while data_atual <= data_fim:
-        data_formatada = data_atual.strftime("%d/%m/%Y")
+        data_formatada = data_atual.strftime("%d%m%Y")
         print(f"Processando data: {data_formatada}")
 
         # Digita a data
