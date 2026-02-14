@@ -331,11 +331,19 @@ if __name__ == "__main__":
         # Enter 5 vezes
         for _ in range(6):
             pressionar('enter')
+        
+        pressionar('F7')
+        esperar(2)
+        text = copiar()
+        print(f'Texto copiado {text}')
+        while text == 'U':
+            pressionar('down')
+            text = copiar()
+            print(f'Texto copiado {text}')
 
         # Próxima data
         data_atual += timedelta(days=1)
         esperar(0.5)
-
 
     print("Processo finalizado!")
     print("Dica: Mova o mouse para o canto superior esquerdo para abortar (FAILSAFE)")
